@@ -1,7 +1,28 @@
-/* Reset some default browser styles */
-body, h1, h2, p, ul, li {
-    margin: 0;
-    padding: 0;
+#header-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 10px;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+.logo img {
+    max-width: 40%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#logo-unibo img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.title {
+    padding-top: 50px;
+    padding-right: 110px;
+    grid-column: 2; 
 }
 
 body {
@@ -9,24 +30,9 @@ body {
     background-color: #f0f0f0;
 }
 
-header {
-    display: grid;
-    grid-template-columns: auto auto; 
-    align-items: center;
-    justify-content: space-between; 
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-}
-
-.logo img {
-    max-width: 50%;
-    height: auto;
-}
-
-.title {
-    margin-left: 20px;
-    grid-column: 2; 
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
 }
 
 .about-me {
@@ -34,7 +40,7 @@ header {
     margin: 20px;
     background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px #0000001a;
 }
 
 .about-me h2 {
@@ -46,8 +52,9 @@ header {
 }
 
 .about-me ul {
-    list-style: none;
-    padding: 0;
+    list-style: disc;
+    color: #333;
+    padding: 10px;
 }
 
 .about-me li {
