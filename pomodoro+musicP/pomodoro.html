@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pomodoro!</title>
+    <link rel="icon" href="https://site212248.tw.cs.unibo.it/img/tomato.png" type="image/x-icon" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="pomodoro.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css" rel="stylesheet">
+  </head>
+  <body>
+    <form id="studyForm">
+        <div class="form-floating">
+            <input class="form-control" placeholder="Leave a comment here" id="numberTom" type="number" min="1" required></textarea>
+            <label for="numberTom">Number of tomatoes?</label>
+        </div>
+        <div class="form-floating">
+            <input class="form-control" placeholder="Leave a comment here" id="minTom" type="number" min="1" required></textarea>
+            <label for="minTom">Minutes of tomatoes?</label>
+        </div> 
+        <div class="form-floating">
+            <input class="form-control" placeholder="Leave a comment here" id="minPause" type="number" min="1" required></textarea>
+            <label for="minPause">Minutes of pauses?</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Start new Pomodoro!</button>
+    </form>
+    <div class="pomodoro">
+        <div id="visual">
+            <div id="spinner">
+                <div id="spinner-s" class="spinner-border text-warning d-none" style="width: 15rem; height: 15rem;" role="status">
+                    <span class="visually-hidden">Studing...</span>
+                </div>
+            </div>
+            <div id="in-spin">
+                <div id="clock" class="blob">
+                    <div class="timer" id="timerDisplay">00:00</div>
+                </div>
+                <div id="stop-t">
+                    <button onclick="stopTimer()" class="btn btn-danger"><i class="bi bi-stopwatch"></i>Stop studing</button>
+                </div>                
+            </div>
+        </div>
+    </div>
+    <div class="music-player">
+        <div id="music">
+            <audio id="musicPlayer" src="music.mp3" hidden></audio> <!--music.mp3 aka music downloaded-->
+                <div id="pt1"> 
+                    <div id="daButton" class=" justify-content-center">
+                        <button id="playButton" class="btn btn-secondary">
+                            <i class="bi bi-play-circle-fill"></i>
+                        </button>
+                    </div>
+                    <div id="vol" class="volume-control-container d-flex align-items-center justify-content-center">
+                        <i class="bi bi-volume-down-fill"></i>
+                        <input type="range" id="volumeControl" class="form-range volume-slider" min="0" max="1" step="0.1" value="1">
+                        <i class="bi bi-volume-up-fill"></i>
+                    </div>
+                </div> 
+                <div id="pt2">
+                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                        <input class="progress-bar" type="range" id="progressSlider" class="form-range" min="0" max="100" value="0" step="1" style="width: 100%;">
+                    </div>
+                    <div class="timestamp">
+                        <div id="currentTime">0:00</div>
+                    </div>
+                </div>
+        </div>
+        <div id="music-img">
+        </div>
+    </div>
+    <script src="pomodoro.js"></script>
+    <script src="music.js"></script>
+  </body>
+</html>

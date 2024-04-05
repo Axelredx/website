@@ -1,28 +1,29 @@
 #header-grid {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-column-gap: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     background-color: #333;
     color: #fff;
     padding: 20px;
 }
 
 .logo img {
-    max-width: 40%;
-    height: auto;
+    height: 200px;
+    width: auto;
     border-radius: 10px;
+    margin-left: 25px;
 }
 
 #logo-unibo img {
-    max-width: 100%;
-    height: auto;
+    width: 350px;
+    height: 200px;
     border-radius: 10px;
 }
 
 .title {
-    padding-top: 50px;
-    padding-right: 110px;
-    grid-column: 2; 
+    padding-top: 40px;
+    padding-left: 40px;
 }
 
 body {
