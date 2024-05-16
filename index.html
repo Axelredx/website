@@ -3,49 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
-    <link rel="stylesheet" href="mysite.css">
-</head>
+    <title>Alex Rossi</title>
+    <link rel="icon" href="./img/image2.png" type="image/x-icon" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./support/site.css">
+    <script src="https://unpkg.com/vue@3"></script>
+</head>  
 <body>
-    <header>
-        <div id="header-grid">
-            <div class="logo">
-                <img src="./img/photo_2023-11-03_17-59-46.jpg" alt="Me">
-            </div>
-            <div class="title">
-                <h1>Welcome to my website!</h1>
-            </div>
-            <div id="logo-unibo">
-                <img src="./img/logo-unibo.png" alt="logo of unibo">
+    <div id="app">
+        <button @click="changeColor" type="button" class="btn btn-light">Need to switch theme? <i class="fa-solid fa-paint-roller"></i></button>
+        <div id="upper" :style="{ backgroundColor: upperColor, color: upperTextColor }">
+            <img id="meme" src="./img/linux_meme.jpg" alt="Me">
+            <h1 id="title">Hello There!</h1>
+            <div id="me_div"><img id="me" src="./img/photo_2023-11-03_17-59-46.jpg" alt="Me"></div>
+        </div>
+        <div id="text_area" :style="{ backgroundColor: bodyColor, color: bodyTextColor }">
+            <div id="text">
+                <div id="about">
+                    <h1><i class="fa-regular fa-address-card"></i>About Me:</h1>
+                    <p>Hello There! I'm Alex, a student of Computer science at Alma Mater Studiorum, 
+                       University of Bologna! My intersts spraead all over from Tech and nerdy things,
+                       such as Videogames and cards, to the Motor world.
+                    </p>
+                </div>
+                <div id="degrees">
+                    <h2><i class="fa-solid fa-graduation-cap"></i>My Educational Background:</h2>
+                    <ul>
+                        <li>
+                            <p>Currently doing Bechelor's Degree in Computer Science at <a href="https://corsi.unibo.it/laurea/informatica" :style="{color: linkColor}">UniBo</a>;</p>
+                        </li>
+                        <li  id="unibo">
+                            <img id="unibo_logo" src="./img/logo-unibo.png" alt="Unibo logo">
+                        </li>
+                        <li>
+                            <p>High School degree at <a href="https://www.liceorighibologna.edu.it/percorsi-studio?id=1491" :style="{color: linkColor}">Liceo Augusto Righi (Bologna)</a> in 'applied sciences'.</p>
+                        </li>
+                        <li id="liceo">
+                            <img id="liceo_logo" src="./img/liceo.jpg" alt="Image of my High school">
+                        </li>
+                    </ul>
+                </div>
+                <div id="project">
+                    <h2><i class="fa-solid fa-diagram-project"></i>My Projects:</h2>
+                    <p>The following list raprestents various projects done by me</p>
+                    <ul>
+                        <li>
+                            <p><a ref="link" href="https://github.com/Axelredx/ConnectX_AI-AlgorithmDataStruct_Project" :style="{color: linkColor}">AxelBrain, a ConnectX AI (Java)</a>; <i class="bi bi-filetype-java"></i></p>
+                        </li>
+                        <li>
+                            <p><a href="https://github.com/Axelredx/Nand2Tetris-ComputerArchitect_Project" :style="{color: linkColor}">Nand2Tetris (Asm,C)</a>; <i class="fa-solid fa-c"></i></p>
+                        </li>
+                        <li>
+                            <p><a href="https://github.com/Axelredx/Telegram_bot" :style="{color: linkColor}">Axe, an AI integrated Telegram bot (Python)</a>; <i class="bi bi-filetype-py"></i></p>
+                        </li>
+                        <li>
+                            <p><a href="https://github.com/Axelredx/2D_Game-NCurses_Project" :style="{color: linkColor}">THE GAME, a 2D terminal game (C++)</a>.</p>
+                        </li>
+                    </ul>
+                    <h6><i class="fa-regular fa-window-restore"></i>Currently developing:</h6>
+                    <ul>
+                        <li>
+                            <p>Microkernel (lvl 2,3,4) of uPANDOS (C); <i class="fa-solid fa-c"></i></p>
+                        </li>
+                        <li>
+                            <p>SELFIE, a calendar app (JS,CSS,HTML,VUE). 
+                                <i class="bi bi-filetype-js"></i>
+                                <i class="bi bi-filetype-css"></i>
+                                <i class="bi bi-filetype-html"></i>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div id="contact">
+                    <h2><i class="fa-solid fa-address-book"></i>Get in contact with me:</h2>
+                    <ul>
+                        <li>
+                            <a href="https://www.instagram.com/alex_rossi_10?igsh=ODgzaXdseW9iMm84" :style="{color:'purple'}"><i class="bi bi-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/Axelredx" :style="{color:'orange'}"><i class="bi bi-github"></i></a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </header>
+    </div>
 
-    <section class="about-me">
-        <h2>About me:</h2>
-        <p>
-            Hi! I'm Alex, a Computer Science undergraduate at Alma Mater Studiorum University 
-            of Bologna, Italy.
-        </p>
-        <h3>Some of my interests:</h3>
-        <ul id="list">
-            <li>Tech</li>
-            <li>Motors (both cars and motorbikes)</li>
-            <li>Nerdy things such as video games and card games!</li>
-        </ul>
-        <h2>Useful links:</h2>
-        <ul id="list">
-            <li><a href="/support/school.html">School</a></li>
-            <li><a href="/pomodoro+musicP/pomodoro.html">Pomodoro App created by me</a></li>
-        </ul>
-    </section>
-
-    <section class="about-me">
-        <h2>Where to find me:</h2>
-        <ul>
-            <li><a href="https://github.com/Axelredx/Axelredx">GitHub</a></li>
-            <li><a href="https://www.unibo.it/it">Where I study</a></li>
-        </ul>
-    </section>
-</body>
+    <script>
+        const { createApp } = Vue;
+        const app = createApp({
+            data() {
+                return {
+                    upperColor: 'black', 
+                    upperTextColor: '#f5f5dc',
+                    bodyColor: '#333', 
+                    bodyTextColor: '#f5f5dc',
+                    linkColor: 'yellow'
+                }
+            },
+            methods: {
+                changeColor() {
+                    if (this.bodyColor === '#333') {
+                        this.upperColor = '#333';
+                        this.upperTextColor = '#f5f5dc';
+                        this.bodyColor = 'white';
+                        this.bodyTextColor = 'black';
+                        this.linkColor = '#0055ff';
+                    } else {
+                        this.upperColor = 'black';
+                        this.upperTextColor = '#f5f5dc';
+                        this.bodyColor = '#333';
+                        this.bodyTextColor = '#f5f5dc';
+                        this.linkColor = 'yellow';
+                    }
+                }
+            }
+        });
+        app.mount('#app');
+    </script>
+</body>  
 </html>
