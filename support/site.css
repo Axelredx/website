@@ -74,9 +74,15 @@ h2, h6{
     #upper {
         flex-direction: column;
         height: 80vh; 
+        width: 100vw;
     }
 
     #me, #meme{
         padding-bottom: 5px;
+    }
+
+    #meme{
+        width: 80vw;
+        height: auto;
     }
 }
