@@ -13,19 +13,19 @@
 </head>  
 <body>
     <div id="app">
-        <button @click="changeColor" type="button" class="btn btn-light">Need to switch theme? <i class="fa-solid fa-paint-roller"></i></button>
+        <button @click="changeColor" type="button" class="btn btn-light">Dark/Light <i class="fa-solid fa-paint-roller"></i></button>
         <div id="upper" :style="{ backgroundColor: upperColor, color: upperTextColor }">
             <img id="meme" src="./img/linux_meme.jpg" alt="Me">
-            <h1 id="title">Hello There!</h1>
+            <h1 id="title"><b>Hello There! <i class="fa-solid fa-jedi"></i></b></h1>
             <div id="me_div"><img id="me" src="./img/photo_2023-11-03_17-59-46.jpg" alt="Me"></div>
         </div>
         <div id="text_area" :style="{ backgroundColor: bodyColor, color: bodyTextColor }">
             <div id="text">
                 <div id="about">
-                    <h1><i class="fa-regular fa-address-card"></i>About Me:</h1>
-                    <p>Hello There! I'm Alex, a student of Computer science at Alma Mater Studiorum, 
-                       University of Bologna! My intersts spread all over from Tech and nerdy things,
-                       such as Videogames and cards, to the Motor world.
+                    <h2><i class="fa-regular fa-address-card"></i>About Me:</h2>
+                    <p>Hello There! I'm Alex, a guy who studies Computer science at Alma Mater Studiorum, 
+                       University of Bologna! My intersts spread all over from Tech world, nerdy things
+                       such as Videogames and cards, to the Motors.
                     </p>
                 </div>
                 <div id="degrees">
@@ -38,7 +38,7 @@
                             <img id="unibo_logo" src="./img/logo-unibo.png" alt="Unibo logo">
                         </li>
                         <li>
-                            <p>High School degree at <a href="https://www.liceorighibologna.edu.it/percorsi-studio?id=1491" :style="{color: linkColor}">Liceo Augusto Righi (Bologna)</a> in 'applied sciences'.</p>
+                            <p>High School degree at <a href="https://www.liceorighibologna.edu.it/percorsi-studio?id=1491" :style="{color: linkColor}">Liceo Augusto Righi (Bologna)</a> in 'Applied Sciences'.</p>
                         </li>
                         <li id="liceo">
                             <img id="liceo_logo" src="./img/liceo.jpg" alt="Image of my High school">

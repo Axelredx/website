@@ -10,12 +10,12 @@
 
 button{
     position: absolute;
-    right: 42%;
+    right: 1px;
     top: 1px;
 }
 
 #me_div{
-    width: 350px;
+    width: 18vw;
     height: 200px;
     display: flex;
     flex-direction: row;
@@ -24,13 +24,13 @@ button{
 }
 
 #me{
-    height: 30vh;
+    height: 25vh;
     width: auto;
     border-radius: 10px;
 }
 
 #meme{
-    height: 30vh;
+    height: 25vh;
     width: auto;
     border-radius: 10px;
 }
@@ -65,7 +65,7 @@ h2, h3, h4, h5, h6{
 }
 
 #unibo_logo, #liceo_logo{
-    height: 200px;
+    height: 15vh;
     width: auto;
     border-radius: 10px;
 }
@@ -74,10 +74,6 @@ h2, h3, h4, h5, h6{
     #upper {
         flex-direction: column;
         height: 80vh; 
-    }
-
-    button {
-        right: 40%;
     }
 
     #me, #meme{
