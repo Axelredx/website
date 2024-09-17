@@ -38,9 +38,8 @@ import { RouterLink, RouterView } from 'vue-router'
   }
 
   .item{
-    padding: 2px;
+    padding: 5px;
     height: 40%;
-    width: 8%; 
     /*background-color: red;
     border: solid 1px black;*/
   }
