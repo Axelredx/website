@@ -1,10 +1,10 @@
 import { ref } from 'vue';
 import { defineStore } from 'pinia';
 
-export   const school = ref([
+export const schools = ref([
   {
     id: 'uni1',
-    typeDegree: 'Bachelor',
+    typeDegree: 'Bechelor',
     degreeName: 'Computer Science',
     schoolName: 'Alma Mater Studiorum - Università di Bologna',
     link: 'https://corsi.unibo.it/laurea/informatica'

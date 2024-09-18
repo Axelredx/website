@@ -4,10 +4,11 @@
 <template>
     <div id="wrapper">
         <h1><b>Hello There!</b> <i class="fa-brands fa-jedi-order"></i></h1>
+        <img src="../../public/me.jpg" id="me" >
         <p>Welcome to my website, I'm Alex, here you can find some information about me, my projects.
             I'm really interested in Motors, Tech world and nerdy things such as Videogames or Cards.
         </p>
-        <img id="imgwrapper" src="/linuxMeme.jpg"> 
+        <img id="imgwrapper" src="../../public/linux_meme.jpg"> 
         <div id="info">
             <p>Some other info:</p>
             <ul>
@@ -35,10 +36,11 @@
 #imgwrapper {
     margin: 5px;
     background-color: aliceblue;
-    height: 30%;
+    height: 28%;
 }
 
 h1 {
+    margin: 5px;
     color: white;
     font-size: 2em;
     text-align: center;
@@ -55,6 +57,12 @@ p {
     color: white;
     font-size: 0.9em;
     text-align: justify;
+}
+
+#me {
+    height: 70%;
+    width: 25%;
+    margin: 5px;
 }
 
 </style>

@@ -29,7 +29,7 @@ import { contacts } from '@/stores/data';
 <style scoped>
 #wrapper {
     width: auto;
-    height: 78vh;
+    height: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -37,9 +37,9 @@ import { contacts } from '@/stores/data';
 }
 
 #item {
-    margin: 5px;
-    width: 80vw;
-    color: ligh;
+    margin: 1px;
+    width: 98%;
+    /*border: solid white;*/
 }
 
 h2 {
@@ -49,11 +49,14 @@ h2 {
 }
 
 p, h3 {
-    color: #ffffff;
+    margin: 2px;
+    color: white;
     font-size: 1.1em;
 }
 
 p {
+    margin: 5px;
+    color: black;
     font-size: 1em;
 }
 
