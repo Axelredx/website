@@ -4,11 +4,11 @@
 <template>
     <div id="wrapper">
         <h1><b>Hello There!</b> <i class="fa-brands fa-jedi-order"></i></h1>
-        <img src="../../public/me.jpg" id="me" >
+        <img src="/me.jpg" id="me" >
         <p>Welcome to my website, I'm Alex, here you can find some information about me, my projects.
             I'm really interested in Motors, Tech world and nerdy things such as Videogames or Cards.
         </p>
-        <img id="imgwrapper" src="../../public/linux_meme.jpg"> 
+        <img id="imgwrapper" src="/linux_meme.jpg"> 
         <div id="info">
             <p>Some other info:</p>
             <ul>
