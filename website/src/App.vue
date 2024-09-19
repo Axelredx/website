@@ -27,6 +27,7 @@ import { RouterLink, RouterView } from 'vue-router'
     height: 10vh;
     width: 100%;
     border-bottom: solid 1px white;
+    margin-bottom: 5px;
   }
 
   nav {
@@ -38,7 +39,7 @@ import { RouterLink, RouterView } from 'vue-router'
   }
 
   .item{
-    padding: 5px;
+    margin: 1px;
     height: 40%;
     /*background-color: red;
     border: solid 1px black;*/

@@ -8,7 +8,7 @@ import { schools } from '@/stores/data';
       <ul>
         <li>
           <div id="pwrapper">
-            <h6 v-if="school.id === 'uni1'"> Currently doing: </h6>
+            <h6 v-if="school.id === 'uni1'"> Currently pursuing: </h6>
             <p> {{ school.typeDegree }} degree in {{ school.degreeName }} at {{ school.schoolName }} </p>
             <a :href="school.link" target="_blank"> {{ school.link }} </a>
           </div>

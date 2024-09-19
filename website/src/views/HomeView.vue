@@ -12,9 +12,9 @@
         <div id="info">
             <p>Some other info:</p>
             <ul>
-                <li> Preferred OS: Linux (What else? [eccept for gaming :/ ])</li>
+                <li> Preferred OS: Linux (What else? [except for gaming :/ ])</li>
                 <li> Preferred Plate: Pizza (obv, I'm italian)</li>
-                <li> Affascinated by Space</li>
+                <li> Fascinated by Space</li>
                 <li> Yu-Gi-Oh and Chess enjoyer</li>
                 <li> Biker dreamer</li>
             </ul>
