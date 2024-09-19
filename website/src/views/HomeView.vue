@@ -1,7 +1,9 @@
 <script setup>
+import Navbar from '../components/navbar.vue';
 </script>
 
 <template>
+    <Navbar />
     <div id="wrapper">
         <h1><b>Hello There!</b> <i class="fa-brands fa-jedi-order"></i></h1>
         <img src="/me.jpg" id="me" >

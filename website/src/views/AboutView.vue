@@ -1,8 +1,10 @@
 <script setup>
 import { schools } from '@/stores/data';
+import Navbar from '../components/navbar.vue';
 </script>
 
 <template>
+  <Navbar />
   <div class="about">
     <div v-for="school in schools" :key="school.id" id="item" >
       <ul>

@@ -1,8 +1,10 @@
 <script setup>
 import { contacts } from '@/stores/data';
+import Navbar from '../components/navbar.vue';
 </script>
 
 <template>
+    <Navbar />
     <h2>You can find me here:</h2>
     <div id="wrapper">
         <ul>

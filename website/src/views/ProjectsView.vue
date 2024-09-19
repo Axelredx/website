@@ -1,11 +1,13 @@
 <script setup>
 import { projects, contacts } from '@/stores/data';
+import Navbar from '../components/navbar.vue';
 import { ref } from 'vue';
 
 const gh = ref(contacts.value[1].link);
 </script>
 
 <template>
+    <Navbar />
     <div id="projects">
         <h4> Here's some of my projects: </h4>
         <div v-for="project in projects" :key="project.id" id="item">
