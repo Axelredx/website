@@ -46,7 +46,7 @@ export const projects = ref([
   {
     language: 'asm',
     projectName: 'Nand2Tetris',
-    projectDescription: ', written in C++ and Assembly language.',
+    projectDescription: '0-6 Nand2Tetris projects, written in C and Assembly language.',
     link: 'https://github.com/Axelredx/Nand2Tetris-ComputerArchitect_Project'
   }
 ]);

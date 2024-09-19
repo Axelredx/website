@@ -10,7 +10,7 @@ import { schools } from '@/stores/data';
           <div id="pwrapper">
             <h6 v-if="school.id === 'uni1'"> Currently doing: </h6>
             <p> {{ school.typeDegree }} degree in {{ school.degreeName }} at {{ school.schoolName }} </p>
-            <a href="school.link"> {{ school.link }} </a>
+            <a :href="school.link" target="_blank"> {{ school.link }} </a>
           </div>
           <div id="imgwrapper">
             <img v-if="school.id === 'uni1'" src="../components/icons/logoUnibo.png" >

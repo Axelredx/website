@@ -17,7 +17,7 @@ import { contacts } from '@/stores/data';
                     <p v-if="contact.contact !== undefined"> 
                         {{ contact.contact }}
                     </p>
-                    <a v-if="contact.link !== undefined" :href="contact.link"> 
+                    <a v-if="contact.link !== undefined" :href="contact.link" target="_blank"> 
                        <p id="plink"> {{ contact.link }}</p> 
                     </a>
                 </li>
@@ -48,7 +48,7 @@ h2 {
     text-align: center;
 }
 
-p, h3 {
+h3 {
     margin: 2px;
     color: white;
     font-size: 1.1em;
@@ -56,8 +56,8 @@ p, h3 {
 
 p {
     margin: 5px;
-    color: black;
     font-size: 1em;
+    
 }
 
 </style>
